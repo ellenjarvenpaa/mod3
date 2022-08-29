@@ -19,4 +19,3 @@ elif gender == "mies":
         print("Hemoglobiini arvo on normaali")
     else:
         print("Hemoglobiini arvo on korkea")
-
