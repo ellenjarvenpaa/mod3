@@ -2,13 +2,9 @@ import math
 
 vuosiluku = int(input("Kirjoita vuosiluku "))
 
-if int(vuosiluku/4):
+if vuosiluku % 4 == 0:
     print("Vuosiluku on karkausvuosi")
-
-if not int(vuosiluku/4):
+elif vuosiluku % 100 and vuosiluku % 400 == 0:
+    print("Vuosiluku on kaurkausvuosi")
+else:
     print("Vuosiluku ei ole karkausvuosi")
-
-elif (vuosiluku /100 and vuosiluku /400):
-    print("Vuosiluku on karkausvuosi")
-#else:
-    #print("Vuosiluku ei ole karkausvuosi")
